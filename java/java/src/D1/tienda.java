@@ -1,4 +1,4 @@
-public class tienda2 {
+public class tienda {
     public static void main(String[] args) {
 
         // Datos del cliente
@@ -12,7 +12,7 @@ public class tienda2 {
         // Estado de pedido (para demo del switch)
         int estadoPedido = 2; 
 
-        System.out.println("=== DARK STORE ===");
+        System.out.println("=== WALLMART ===");
         System.out.println("Cliente: " + nombreCliente);
         System.out.println("------------------------------");
 
@@ -75,7 +75,8 @@ public class tienda2 {
         }
 
         System.out.println("------------------------------");
-        System.out.println("¡Gracias por su compra!, esto NO sera investigado por la INTERPOL."); //A menos que el profesor sea un agente encubierto.
+        System.out.println("¡Gracias por su compra!, esto NO sera investigado por la INTERPOL."); 
+        //A menos que el profesor sea un agente encubierto.
      
     }
 }
