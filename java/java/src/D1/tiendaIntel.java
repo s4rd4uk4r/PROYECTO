@@ -1,12 +1,17 @@
-public class tienda {
+import java.util.Scanner;
+
+public class tiendaIntel {
     public static void main(String[] args) {
 
         // Datos del cliente
         String[] listaNombres = {"Ilich Ramirez", "Saddam Husein", "Muhammar Gadafi", "Cliente Nuevo"};
         boolean listaMembresias[] = {true, true, true, false};
-
-        String nombreCliente = "Cliente Nuevo";
+        
         boolean esMiembro = false;
+
+        Scanner teclado = new Scanner(System.in); 
+        System.out.print("Ingrese nombre del cliente para verificar membresía: ");
+        String nombreCliente = teclado.nextLine();
 
         // 3. BÚSQUEDA AUTOMÁTICA
         // Buscamos si el nombre existe en la lista y copiamos su membresía
@@ -93,6 +98,7 @@ public class tienda {
         System.out.println("------------------------------");
         System.out.println("¡Gracias por su compra!, esto NO sera investigado por la INTERPOL."); 
         //A menos que el profesor sea un agente encubierto.
-     
+       teclado.close();
     }
 }
+
